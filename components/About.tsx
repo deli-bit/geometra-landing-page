@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Building2, Compass, FileText, Users, Award, TrendingUp } from 'lucide-react';
 
 const skills = [
