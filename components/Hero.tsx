@@ -11,7 +11,7 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#BBDBE6]/20 via-[#80B2C8]/20 to-[#4072AB]/20 pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#BBDBE6]/20 via-[#80B2C8]/20 to-[#4072AB]/20 pt-20 pb-12 md:pb-0">
       {/* Geometric background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -35,7 +35,7 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mt-8 md:mt-12">
           {/* Left side - Text and Buttons */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -52,7 +52,7 @@ export function Hero() {
               <Ruler className="w-8 h-8 text-white" />
             </motion.div>
             
-            <h1 className="mb-4 text-[#1C3666] text-[2.7rem] font-semibold">
+            <h1 className="mb-4 text-[#1C3666] text-3xl sm:text-4xl lg:text-[2.7rem] font-semibold">
               Geometra Professionista
             </h1>
             
@@ -60,7 +60,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-[#1C3666] mb-8 max-w-xl"
+              className="text-[#1C3666] mb-6 md:mb-8 max-w-xl text-sm sm:text-base"
             >
               Progettazione architettonica, consulenza tecnica e gestione di progetti edilizi 
               con precisione, creatività e attenzione ai dettagli. Servizi professionali 
@@ -71,17 +71,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             >
               <button
                 onClick={() => scrollToSection('portfolio')}
-                className="px-8 py-3 bg-[#304E8E] text-white hover:bg-[#4072AB] transition-colors"
+                className="px-6 sm:px-8 py-3 bg-[#304E8E] text-white hover:bg-[#4072AB] transition-colors w-full sm:w-auto"
               >
                 Visualizza Portfolio
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="px-8 py-3 border-2 border-[#1C3666] text-[#1C3666] hover:bg-[#1C3666] hover:text-white transition-colors"
+                className="px-6 sm:px-8 py-3 border-2 border-[#1C3666] text-[#1C3666] hover:bg-[#1C3666] hover:text-white transition-colors w-full sm:w-auto"
               >
                 Contattami
               </button>
@@ -103,7 +103,7 @@ export function Hero() {
                 <ImageWithFallback
                   src={heroImage}
                   alt="Architektonische Zeichnung Einfamilienhaus"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
                 />
               </div>
 

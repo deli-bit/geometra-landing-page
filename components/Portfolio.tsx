@@ -58,16 +58,16 @@ export function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="mb-4 text-[#1C3666] text-[2.7rem] font-semibold">
+          <h2 className="mb-4 text-[#1C3666] text-3xl sm:text-4xl lg:text-[2.7rem] font-semibold">
             Portfolio
           </h2>
-          <p className="text-[#304E8E] max-w-2xl mx-auto">
+          <p className="text-[#304E8E] max-w-2xl mx-auto text-sm sm:text-base">
             Una selezione dei progetti realizzati negli ultimi anni, 
             che rappresentano la varietà e la qualità del mio lavoro.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -77,7 +77,7 @@ export function Portfolio() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative overflow-hidden bg-white border border-[#80B2C8] hover:border-[#304E8E] transition-all duration-300"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
@@ -92,14 +92,14 @@ export function Portfolio() {
                 </div>
               </div>
               
-              <div className="p-6">
-                <div className="text-[#4072AB] mb-2">
+              <div className="p-4 sm:p-6">
+                <div className="text-[#4072AB] mb-2 text-xs sm:text-sm">
                   {project.category}
                 </div>
-                <h3 className="mb-2 text-[#1C3666]">
+                <h3 className="mb-2 text-[#1C3666] text-sm sm:text-base">
                   {project.title}
                 </h3>
-                <p className="text-[#304E8E]">
+                <p className="text-[#304E8E] text-xs sm:text-sm">
                   {project.description}
                 </p>
               </div>

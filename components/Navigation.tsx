@@ -45,16 +45,16 @@ export function Navigation() {
               className="flex items-center gap-2 text-white hover:text-[#BBDBE6] transition-colors"
             >
               <Ruler className="w-6 h-6" />
-              <span className="hidden sm:inline">Geometra Professionista</span>
+              <span className="hidden sm:inline text-sm md:text-base">Geometra Professionista</span>
             </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-4 lg:gap-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-white hover:text-[#BBDBE6] transition-colors relative group"
+                  className="text-white hover:text-[#BBDBE6] transition-colors relative group text-sm lg:text-base"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#80B2C8] group-hover:w-full transition-all duration-300" />
@@ -62,7 +62,7 @@ export function Navigation() {
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="px-6 py-2 bg-[#304E8E] text-white hover:bg-[#4072AB] transition-colors"
+                className="px-4 lg:px-6 py-2 bg-[#304E8E] text-white hover:bg-[#4072AB] transition-colors text-sm lg:text-base"
               >
                 Contattami
               </button>
