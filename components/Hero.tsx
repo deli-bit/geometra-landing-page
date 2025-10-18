@@ -1,7 +1,8 @@
 import { motion } from 'motion/react';
 import { Ruler, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import heroImage from 'figma:asset/9af7f9bd527e667fa0e2378e4e4d226f078b0979.png';
+
+const heroImage = 'https://images.unsplash.com/photo-1556156653-e5a7c69cc263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzJTIwdG9vbHN8ZW58MXx8fHwxNzYwNzk0NDk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral';
 
 export function Hero() {
   const scrollToSection = (id: string) => {
