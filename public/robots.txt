@@ -1,0 +1,15 @@
+# robots.txt für Geometra Landing Page
+
+# Erlaube allen Suchmaschinen den Zugriff
+User-agent: *
+Allow: /
+
+# Sitemap Location - WICHTIG: Ersetze mit deiner echten Domain!
+Sitemap: https://geometra-landing-page.pages.dev/sitemap.xml
+
+# Crawl-Delay für höfliches Crawling
+Crawl-delay: 1
+
+# Blockiere keine Ressourcen (wichtig für Google PageSpeed)
+Allow: /styles/
+Allow: /components/

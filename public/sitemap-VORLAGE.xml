@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- 
+    ⚠️ WICHTIG: Ersetze "DEINE-DOMAIN" in ALLEN URLs unten!
+    
+    Finde deine Domain auf Cloudflare:
+    1. https://dash.cloudflare.com → Pages → geometra-landing-page
+    2. Kopiere die URL (z.B. https://geometra-landing-page-abc123.pages.dev)
+    3. Ersetze "DEINE-DOMAIN" mit dieser URL (OHNE den abschließenden /)
+    
+    Beispiel:
+    VOR:  <loc>DEINE-DOMAIN/</loc>
+    NACH: <loc>https://geometra-landing-page-abc123.pages.dev/</loc>
+  -->
+  
+  <!-- Homepage -->
+  <url>
+    <loc>DEINE-DOMAIN/</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Hero Section -->
+  <url>
+    <loc>DEINE-DOMAIN/#hero</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Chi Sono (About) -->
+  <url>
+    <loc>DEINE-DOMAIN/#about</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Portfolio -->
+  <url>
+    <loc>DEINE-DOMAIN/#portfolio</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contatti (Contact) -->
+  <url>
+    <loc>DEINE-DOMAIN/#contact</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>

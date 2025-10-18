@@ -4,15 +4,27 @@ import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { useEffect } from 'react';
 
 export default function App() {
+  // SEO: Update page title on mount
+  useEffect(() => {
+    // Set page title dynamically if needed
+    document.title = 'Geometra Professionista Milano | Progettazione Architettonica';
+    
+    // Add lang attribute to html element
+    document.documentElement.lang = 'it';
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Portfolio />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

@@ -102,7 +102,7 @@ export function Hero() {
               <div className="relative z-10 overflow-hidden">
                 <ImageWithFallback
                   src={heroImage}
-                  alt="Architektonische Zeichnung Einfamilienhaus"
+                  alt="Geometra professionista Milano - Progettazione architettonica e disegni tecnici per progetti edilizi residenziali e commerciali"
                   className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
                 />
               </div>
