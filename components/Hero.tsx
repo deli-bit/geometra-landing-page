@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { Ruler, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-
-const heroImage = 'https://images.unsplash.com/photo-1556156653-e5a7c69cc263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzJTIwdG9vbHN8ZW58MXx8fHwxNzYwNzk0NDk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral';
+const heroImage = '/hero-bauplan.jpg;
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -106,29 +105,6 @@ export function Hero() {
                   className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
                 />
               </div>
-
-              {/* Decorative horizontal line */}
-              <motion.div 
-                className="absolute bottom-16 left-0 right-0 h-1 bg-[#304E8E] z-20"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{
-                  duration: 1.5,
-                  ease: "easeOut"
-                }}
-              >
-                <motion.div
-                  className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#1C3666] rounded-full"
-                  animate={{ 
-                    x: [0, -8, 0],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-              </motion.div>
             </div>
           </motion.div>
         </div>
