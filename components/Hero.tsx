@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { Ruler, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-const heroImage = '/hero-bauplan.jpg;
+
+const heroImage = '/hero-bauplan.jpg';
 
 export function Hero() {
   const scrollToSection = (id: string) => {
